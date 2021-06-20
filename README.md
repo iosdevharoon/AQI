@@ -24,6 +24,17 @@ It is responsible to abstract the working of coredata, it accept the Data Models
 It also retrive data on background context to avoid freezing main thread
 
 
+# Supports
+1. iPad All Orientations
+2. iPhone All Orientations
+3. iOS 13.0 and Above
+
+# Used Library
+1. HICharts : https://github.com/highcharts/highcharts-ios
+I have used HICharts because its Web-Based and hence highly customisable, looks same on every platform. also I have used this in my previous project.
+
+
+
 # Listing iPAD
 ![image](https://i.ibb.co/y52zm8p/Simulator-Screen-Shot-i-Pad-Pro-12-9-inch-5th-generation-2021-06-20-at-16-18-03.png)
 ![image](https://i.ibb.co/JW1vPLc/Simulator-Screen-Shot-i-Pad-Pro-12-9-inch-5th-generation-2021-06-20-at-16-20-03.png)
