@@ -6,9 +6,11 @@
 //
 
 import Foundation
-class CityEventObserver{
+
+//This a special event listener because our server responds array instead of Dictionary
+class CityEventObserver {
     var eventHandler: ((_ data : [CityDTO]?, _ errorMessage : String?)->Void)?
-    
+    // MARK: takes a closure to send events
     init(eventHandler: ((_ data : [CityDTO]?, _ errorMessage : String?)->Void)?) {
         self.eventHandler  = eventHandler
     }

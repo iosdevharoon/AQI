@@ -7,18 +7,22 @@
 
 import Foundation
 class CityListingViewModel {
+    
     // MARK: Instance Variables
     var hasCityDataFetched = Binding<Bool?>.init(value: nil)
     private var cityList = [City]()
+    
     // MARK: Event Observer
     lazy var observer = CityEventObserver(
         eventHandler: {[weak self](data, errorMessage) in
             self?.addOrUpdateCitiesInList(cities: data)
         })
+    
     // MARK: Initialization
     init() {
         NetworkManager.shared.addCityObserver(observer: observer)
     }
+    
     // MARK: Add Cities to Data Source and use to nested func
     private func addOrUpdateCitiesInList(cities : [CityDTO]?) {
         func addOrUpdateCity(city : CityDTO){
@@ -42,17 +46,20 @@ class CityListingViewModel {
             self.hasCityDataFetched.value = true
         }
     }
+    
     // MARK: DataSource functions
-    func getNumberOfCities() -> Int{
-        return self.cityList.count
+    func getNumberOfCities() -> Int {
+        return self.getAllCities().count
     }
-    func getCityAtIndex(index : Int) -> City?{
-        if index < self.cityList.count{
-            return self.cityList[index]
+    
+    func getCityAtIndex(index : Int) -> City? {
+        if index < getAllCities().count {
+            return getAllCities()[index]
         }
         return nil
     }
-    func getAllCities() -> [City]{
+    
+    func getAllCities() -> [City] {
         return self.cityList
     }
     

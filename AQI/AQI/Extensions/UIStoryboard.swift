@@ -10,11 +10,11 @@ import UIKit
 extension UIStoryboard {
     fileprivate static let main = UIStoryboard(name: "Main", bundle: nil)
     
-    
+    // MARK: Configure function
     func getViewController<T: UIViewController>() -> T {
         return instantiateViewController(withIdentifier: T.storyboardID) as! T
     }
-    
+    // MARK: View Controller's reference and setup config
     class func getCityListViewController() -> CityListViewController {
        return main.getViewController()
     }

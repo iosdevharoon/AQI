@@ -11,6 +11,9 @@
 		CD3C3938785F3A5F9781EB4D /* Pods_AQITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B40CD7C1AB9CA0B5BF79D1 /* Pods_AQITests.framework */; };
 		D9998364267F673400DF09CF /* CityObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9998363267F673400DF09CF /* CityObservers.swift */; };
 		D9998366267F675700DF09CF /* KeyObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9998365267F675700DF09CF /* KeyObservers.swift */; };
+		D9998368267F72E400DF09CF /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9998367267F72E400DF09CF /* DoubleExt.swift */; };
+		D999836A267F730F00DF09CF /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9998369267F730F00DF09CF /* DateExt.swift */; };
+		D999836C267F735500DF09CF /* FloatExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D999836B267F735500DF09CF /* FloatExt.swift */; };
 		D9DFD4AC267D082400BE14D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4AB267D082400BE14D8 /* AppDelegate.swift */; };
 		D9DFD4AE267D082400BE14D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4AD267D082400BE14D8 /* SceneDelegate.swift */; };
 		D9DFD4B3267D082400BE14D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DFD4B1267D082400BE14D8 /* Main.storyboard */; };
@@ -27,7 +30,7 @@
 		D9DFD4ED267D440F00BE14D8 /* CityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4EC267D440F00BE14D8 /* CityDTO.swift */; };
 		D9DFD4F1267D451800BE14D8 /* CityListingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4F0267D451800BE14D8 /* CityListingVM.swift */; };
 		D9DFD4F5267D45C400BE14D8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4F4267D45C400BE14D8 /* City.swift */; };
-		D9DFD4FB267D5F2300BE14D8 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4FA267D5F2300BE14D8 /* GeneralExtensions.swift */; };
+		D9DFD4FB267D5F2300BE14D8 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4FA267D5F2300BE14D8 /* UIColorExt.swift */; };
 		D9DFD4FF267D697D00BE14D8 /* CityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4FD267D697D00BE14D8 /* CityTableCell.swift */; };
 		D9DFD500267D697D00BE14D8 /* CityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9DFD4FE267D697D00BE14D8 /* CityTableCell.xib */; };
 		D9DFD504267D761A00BE14D8 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD503267D761A00BE14D8 /* ChartViewController.swift */; };
@@ -70,6 +73,9 @@
 		B86EAF1E17CA6583D5793252 /* Pods_AQI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9998363267F673400DF09CF /* CityObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityObservers.swift; sourceTree = "<group>"; };
 		D9998365267F675700DF09CF /* KeyObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyObservers.swift; sourceTree = "<group>"; };
+		D9998367267F72E400DF09CF /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
+		D9998369267F730F00DF09CF /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		D999836B267F735500DF09CF /* FloatExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExt.swift; sourceTree = "<group>"; };
 		D9DFD4A8267D082400BE14D8 /* AQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DFD4AB267D082400BE14D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DFD4AD267D082400BE14D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +98,7 @@
 		D9DFD4EC267D440F00BE14D8 /* CityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDTO.swift; sourceTree = "<group>"; };
 		D9DFD4F0267D451800BE14D8 /* CityListingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListingVM.swift; sourceTree = "<group>"; };
 		D9DFD4F4267D45C400BE14D8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		D9DFD4FA267D5F2300BE14D8 /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		D9DFD4FA267D5F2300BE14D8 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		D9DFD4FD267D697D00BE14D8 /* CityTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableCell.swift; sourceTree = "<group>"; };
 		D9DFD4FE267D697D00BE14D8 /* CityTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableCell.xib; sourceTree = "<group>"; };
 		D9DFD503267D761A00BE14D8 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -242,8 +248,11 @@
 				D9DFD4E5267D40EF00BE14D8 /* UIStoryboard.swift */,
 				D9DFD4E7267D414D00BE14D8 /* UIViewController.swift */,
 				D9DFD4E9267D41EB00BE14D8 /* NSObject.swift */,
-				D9DFD4FA267D5F2300BE14D8 /* GeneralExtensions.swift */,
+				D9DFD4FA267D5F2300BE14D8 /* UIColorExt.swift */,
 				D9DFD516267F2F9700BE14D8 /* Binding.swift */,
+				D9998367267F72E400DF09CF /* DoubleExt.swift */,
+				D9998369267F730F00DF09CF /* DateExt.swift */,
+				D999836B267F735500DF09CF /* FloatExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -576,19 +585,22 @@
 				D9DFD4EA267D41EB00BE14D8 /* NSObject.swift in Sources */,
 				D9DFD4ED267D440F00BE14D8 /* CityDTO.swift in Sources */,
 				D9998364267F673400DF09CF /* CityObservers.swift in Sources */,
-				D9DFD4FB267D5F2300BE14D8 /* GeneralExtensions.swift in Sources */,
+				D9DFD4FB267D5F2300BE14D8 /* UIColorExt.swift in Sources */,
 				D9DFD4E6267D40EF00BE14D8 /* UIStoryboard.swift in Sources */,
+				D9998368267F72E400DF09CF /* DoubleExt.swift in Sources */,
 				D9998366267F675700DF09CF /* KeyObservers.swift in Sources */,
 				D9DFD510267E654600BE14D8 /* LineChart.swift in Sources */,
 				D9DFD4AC267D082400BE14D8 /* AppDelegate.swift in Sources */,
 				D9DFD4FF267D697D00BE14D8 /* CityTableCell.swift in Sources */,
 				D9DFD513267E65D400BE14D8 /* HistoricalViewController.swift in Sources */,
+				D999836A267F730F00DF09CF /* DateExt.swift in Sources */,
 				D9DFD4E1267D0CEF00BE14D8 /* NetworkManager.swift in Sources */,
 				D9DFD50A267DB01400BE14D8 /* ChartView.swift in Sources */,
 				D9DFD50E267E4B9000BE14D8 /* HIstoricalDataManager.swift in Sources */,
 				D9DFD506267D763D00BE14D8 /* ChartVM.swift in Sources */,
 				D9DFD4F1267D451800BE14D8 /* CityListingVM.swift in Sources */,
 				D9DFD4F5267D45C400BE14D8 /* City.swift in Sources */,
+				D999836C267F735500DF09CF /* FloatExt.swift in Sources */,
 				D9DFD4AE267D082400BE14D8 /* SceneDelegate.swift in Sources */,
 				D9DFD4E3267D405C00BE14D8 /* CityListViewController.swift in Sources */,
 				D9DFD515267E67A000BE14D8 /* HistoricalDataVM.swift in Sources */,

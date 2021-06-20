@@ -8,7 +8,10 @@
 import UIKit
 
 class CityTableCell: UITableViewCell {
+    // MARK: indentitifier
     static let identitfier = "CityTableCell"
+    
+    // MARK: IBOutlet
     @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var imgViewStatus: UIImageView!
     @IBOutlet weak var lblCityName: UILabel!
@@ -17,7 +20,7 @@ class CityTableCell: UITableViewCell {
     @IBOutlet weak var viewStatus: UIView!
     @IBOutlet weak var lblStatus: UILabel!
     
-    
+    // MARK: Configure function
     func configure(with city : City){
         self.lblCityName.text = city.name
         if let latestValue = city.aqi.last{
@@ -33,19 +36,6 @@ class CityTableCell: UITableViewCell {
             self.lblStatus.text = "Unknown"
             self.imgViewStatus.image = nil
             self.viewStatus.backgroundColor = UIColor.white
-            
         }
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-    
 }
