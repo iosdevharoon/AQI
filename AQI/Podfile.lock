@@ -1,0 +1,20 @@
+PODS:
+  - Highcharts (9.1.2)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - Highcharts
+  - Starscream
+
+SPEC REPOS:
+  trunk:
+    - Highcharts
+    - Starscream
+
+SPEC CHECKSUMS:
+  Highcharts: dc9094e57e6d5c373520db7aa350db6437aafd36
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 1c4ac9d91455c0e6a98ee70f4ed034b50375126a
+
+COCOAPODS: 1.10.1
