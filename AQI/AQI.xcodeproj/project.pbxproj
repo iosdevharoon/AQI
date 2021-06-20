@@ -183,13 +183,13 @@
 		D9DFD4AA267D082400BE14D8 /* AQI */ = {
 			isa = PBXGroup;
 			children = (
-				D9DFD50C267E4B6200BE14D8 /* DatabaseLayer */,
+				D9DFD4EE267D44CE00BE14D8 /* ViewsAndVMs */,
 				D9DFD50B267E46FA00BE14D8 /* ReusableCode */,
+				D9DFD50C267E4B6200BE14D8 /* DatabaseLayer */,
 				D9DFD4E4267D409400BE14D8 /* Extensions */,
 				D9DFD4DE267D0BDB00BE14D8 /* NetworkLayer */,
 				D9DFD4AB267D082400BE14D8 /* AppDelegate.swift */,
 				D9DFD4AD267D082400BE14D8 /* SceneDelegate.swift */,
-				D9DFD4EE267D44CE00BE14D8 /* ViewsAndVMs */,
 				D9DFD4B1267D082400BE14D8 /* Main.storyboard */,
 				D9DFD4B9267D082600BE14D8 /* LaunchScreen.storyboard */,
 				D9DFD4BC267D082600BE14D8 /* Info.plist */,
