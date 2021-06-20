@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A0966FC22F32258ED2AF3F14 /* Pods_AQI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86EAF1E17CA6583D5793252 /* Pods_AQI.framework */; };
 		CD3C3938785F3A5F9781EB4D /* Pods_AQITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B40CD7C1AB9CA0B5BF79D1 /* Pods_AQITests.framework */; };
+		D9998364267F673400DF09CF /* CityObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9998363267F673400DF09CF /* CityObservers.swift */; };
+		D9998366267F675700DF09CF /* KeyObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9998365267F675700DF09CF /* KeyObservers.swift */; };
 		D9DFD4AC267D082400BE14D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4AB267D082400BE14D8 /* AppDelegate.swift */; };
 		D9DFD4AE267D082400BE14D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD4AD267D082400BE14D8 /* SceneDelegate.swift */; };
 		D9DFD4B3267D082400BE14D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DFD4B1267D082400BE14D8 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		4C3FBE0534B54B040E2BCBA1 /* Pods-AQITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQITests.debug.xcconfig"; path = "Target Support Files/Pods-AQITests/Pods-AQITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B41265B1534C455EBAB7C545 /* Pods-AQI-AQIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AQI-AQIUITests.debug.xcconfig"; path = "Target Support Files/Pods-AQI-AQIUITests/Pods-AQI-AQIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B86EAF1E17CA6583D5793252 /* Pods_AQI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AQI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9998363267F673400DF09CF /* CityObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityObservers.swift; sourceTree = "<group>"; };
+		D9998365267F675700DF09CF /* KeyObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyObservers.swift; sourceTree = "<group>"; };
 		D9DFD4A8267D082400BE14D8 /* AQI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AQI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DFD4AB267D082400BE14D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DFD4AD267D082400BE14D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				D9DFD4E0267D0CEF00BE14D8 /* NetworkManager.swift */,
+				D9998363267F673400DF09CF /* CityObservers.swift */,
+				D9998365267F675700DF09CF /* KeyObservers.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -569,8 +575,10 @@
 				D9DFD517267F2F9700BE14D8 /* Binding.swift in Sources */,
 				D9DFD4EA267D41EB00BE14D8 /* NSObject.swift in Sources */,
 				D9DFD4ED267D440F00BE14D8 /* CityDTO.swift in Sources */,
+				D9998364267F673400DF09CF /* CityObservers.swift in Sources */,
 				D9DFD4FB267D5F2300BE14D8 /* GeneralExtensions.swift in Sources */,
 				D9DFD4E6267D40EF00BE14D8 /* UIStoryboard.swift in Sources */,
+				D9998366267F675700DF09CF /* KeyObservers.swift in Sources */,
 				D9DFD510267E654600BE14D8 /* LineChart.swift in Sources */,
 				D9DFD4AC267D082400BE14D8 /* AppDelegate.swift in Sources */,
 				D9DFD4FF267D697D00BE14D8 /* CityTableCell.swift in Sources */,

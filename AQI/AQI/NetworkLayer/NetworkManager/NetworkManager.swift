@@ -7,23 +7,6 @@
 
 import Foundation
 import Starscream
-class CityEventObserver{
-    var eventHandler: ((_ data : [CityDTO]?, _ errorMessage : String?)->Void)?
-    
-    init(eventHandler: ((_ data : [CityDTO]?, _ errorMessage : String?)->Void)?) {
-        self.eventHandler  = eventHandler
-    }
-}
-class KeyEventObserver{
-    
-    var eventName : String = ""
-    var eventHandler: ((_ data : Data?, _ errorMessage : String?)->Void)?
-    
-    init(eventName : String, eventHandler: ((_ data : Data?, _ errorMessage : String?)->Void)?) {
-        self.eventName = eventName
-        self.eventHandler  = eventHandler
-    }
-}
 class NetworkManager{
     //Constants
     struct API {
