@@ -4,9 +4,7 @@
 //
 //  Created by Mohammad Haroon on 19/06/21.
 //
-/*
- Dto to tra
- */
+// MARK: This DTO is used for server communications 
 import Foundation
 struct CityDTO : Codable{
     var city : String

@@ -9,7 +9,7 @@ import UIKit
 
 class CityListViewController: UIViewController {
     
-    
+    // MARK: IBOutlets
     @IBOutlet weak var tblViewCities: UITableView! {
         didSet{
             self.tblViewCities.register(UINib(nibName: CityTableCell.identitfier, bundle: nil),
@@ -19,7 +19,7 @@ class CityListViewController: UIViewController {
             
         }
     }
-    
+    // MARK: View Model
     let viewModel = CityListingViewModel()
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class CityListViewController: UIViewController {
         self.title = "City List"
         self.bindUIElements()
     }
-    
+    // MARK: Servers Event Listener
     private func bindUIElements() {
         self.viewModel.hasCityDataFetched.bind { [weak self] (success) in
             
@@ -39,7 +39,7 @@ class CityListViewController: UIViewController {
         }
         
     }
-    
+    // MARK: IBActions
     @IBAction func btnSeeAllinChartTapped(_ sender: UIButton) {
         let vc = UIStoryboard.getChartViewController(forCity: nil, existingCities: self.viewModel.getAllCities())
         self.navigationController?.pushViewController(vc, animated: true)
@@ -51,7 +51,7 @@ class CityListViewController: UIViewController {
     }
     
 }
-
+// MARK: Table View Data Source and Delegate
 extension CityListViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.viewModel.getNumberOfCities()

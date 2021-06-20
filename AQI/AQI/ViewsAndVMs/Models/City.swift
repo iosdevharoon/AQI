@@ -6,18 +6,19 @@
 //
 
 import Foundation
+// MARK: This Model is used for View-ViewModel communications
 class City {
     var name : String
     var aqi : [Double]
     var lastModificationTime : [Date]
     
-    
+    // MARK: Default initializer
     init(name : String, aqi : [Double], lastModificationTime : [Date]) {
         self.name = name
         self.aqi = aqi
         self.lastModificationTime = lastModificationTime
     }
-    
+    // MARK: Initializer used from server events
     init(city : CityDTO, lastModificationTime : Date) {
         self.name = city.city
         self.aqi = [Double]()
