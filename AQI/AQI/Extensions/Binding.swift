@@ -4,10 +4,9 @@
 //
 //  Created by Mohammad Haroon on 20/06/21.
 //
-
-import Foundation
+///This class can be used to bind a value with a closure.
+///We did this in City List Controller.
 class Binding<T> {
-    
     var value : T {
         didSet{
             handler?(value)
